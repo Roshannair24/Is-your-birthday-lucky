@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 
 :root {
   --dark-grey: #374151;
@@ -6,7 +6,7 @@
 
   --blue: #00a19d;
 
-  --divbg: #fff8e5;
+  --divbg: #f0e5cf;
 
   --orcol: #ffb344;
 
@@ -14,29 +14,212 @@
 
   --greencol: #80ed99;
 
+  --highlightgreencol: #4ced71;
+
   --dkgreencol: #57cc99;
+
+  --inputbr: #f4d19b;
 }
 
 body {
   box-sizing: border-box;
 
-  background-color: red;
+  font-family: "Balsamiq Sans", cursive;
 
-  font-family: 'Balsamiq Sans', cursive;
+  display: flex;
 
-display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--off-white);
+  color: var(--dark-grey);
+}
 
-justify-content: center;
-align-items: center;
+input {
+  margin: 1rem;
+  width: 10rem;
+  height: 2rem;
+
+  border-radius: 0.5rem;
+  border-style: solid;
+  outline: none;
+  border-color: var(--inputbr);
+  font-family: "Balsamiq Sans", cursive;
+}
+
+h1 {
+  color: #4a403a;
+}
+
+.outer-container {
+  text-align: center;
+  width: 28rem;
+
+  border-radius: 0.5rem;
+  border-style: none;
+
+  background-color: var(--divbg);
+}
+
+button {
+  font-family: "Balsamiq Sans", cursive;
+  border-radius: 0.5rem;
+
+  border-style: solid;
+
+  height: 2rem;
+
+  background-color: var(--divbg);
+
+  border-color: var(--dark-grey);
+  transition: all 0.5s ease;
+
+  color: var(--dark-grey);
+}
+
+button:hover {
+  background-color: var(--dark-grey);
+
+  border-color: var(--dark-grey);
+
+  color: var(--inputbr);
+
+  transition: all 0.5s ease;
+}
+
+.message-holder {
+  margin-top: 1rem;
+
+  border-radius: 0.5rem;
+}
+
+.default-gradient{
+
+background-color: rgba(240, 229, 207, 1);
 
 
 }
 
 
-.outer-container{
 
-width: 28rem;
+.yes-highlight {
+  background: rgb(76, 237, 113);
+  background: linear-gradient(
+    0deg,
+    rgba(76, 237, 113, 1) 8%,
+    rgba(240, 229, 207, 1) 100%
+  );
+}
 
-background-color: blue;
+.no-highlight {
+  background: var(--redcol);
+  background: linear-gradient(
+    0deg,
+    var(--redcol) 8%,
+    rgba(240, 229, 207, 1) 100%
+  );
+}
+
+.blue-highlight {
+  background: rgb(1, 208, 203);
+  background: linear-gradient(
+    0deg,
+    rgba(1, 208, 203, 1) 8%,
+    rgba(240, 229, 207, 1) 100%
+  );
+}
+
+.orange-highlight {
+  background: rgb(255, 179, 68);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 179, 68, 1) 8%,
+    rgba(240, 229, 207, 1) 100%
+  );
+}
+
+.message-holder .emoji {
+  padding: 1rem;
+
+  font-size: 2rem;
+}
+
+.message-holder p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.verdict {
+  font-weight: 700;
+}
+
+footer {
+  background-color: chocolate;
+
+  width: 100%;
+
+  position: fixed;
+
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  flex-direction: column;
+
+  color: var(--inputbr);
+
+  padding: 1rem;
+}
+
+footer .footer-header{
+
+
+    margin: 1rem;
+
+
+  }
+
+
+
+footer ul {
+  display: flex;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+
+  flex-direction: row;
+
+  text-align: center;
+
+
+
+
+}
+
+
+
+a{
+color: var(--inputbr);
+
+
+
+}
+
+footer ul li {
+  display: inline;
+
+margin: 0.5rem;
+
+font-size: 2rem;
+
+
+
 
 }
