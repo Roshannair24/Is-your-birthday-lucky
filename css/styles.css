@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+
+:root {
+  --dark-grey: #374151;
+  --off-white: #f3f4f6;
+
+  --blue: #00a19d;
+
+  --divbg: #fff8e5;
+
+  --orcol: #ffb344;
+
+  --redcol: #e05d5d;
+
+  --greencol: #80ed99;
+
+  --dkgreencol: #57cc99;
+}
+
+body {
+  box-sizing: border-box;
+
+  background-color: red;
+
+  font-family: 'Balsamiq Sans', cursive;
+
+display: flex;
+
+justify-content: center;
+align-items: center;
+
+
+}
+
+
+.outer-container{
+
+width: 28rem;
+
+background-color: blue;
+
+}
