@@ -4,7 +4,7 @@ let checkLuckbtn = document.querySelector("#check-luck");
 let emoji = document.querySelector(".emoji");
 let verdictpara = document.querySelector(".verdict");
 
-let msghholderdiv=document.querySelector(".message-holder");
+let msghholderdiv = document.querySelector(".message-holder");
 
 let masterdob;
 let masterdobsum;
@@ -48,9 +48,7 @@ function calculatedobsum(dobstring) {
 }
 
 function clickHandler() {
-    msghholderdiv.classList.add("default-gradient");
-
-   
+  msghholderdiv.classList.add("default-gradient");
 
   console.log(typeof birthday.value);
 
@@ -65,10 +63,7 @@ function clickHandler() {
     verdictpara.innerText = "The input field is empty";
     emoji.innerText = "🙄";
 
-
     msghholderdiv.classList.add("blue-highlight");
-
-
   } else if (birthday.value.length === 0) {
     console.log("no  date value");
 
@@ -83,6 +78,12 @@ function clickHandler() {
     verdictpara.innerText = "Please input valid numerals.";
     emoji.innerText = "😒";
 
+    msghholderdiv.classList.add("orange-highlight");
+  } else if (luckyNumber.value < 0) {
+
+    console.log("lucky number less than zero");
+    verdictpara.innerText = "Please input valid numerals.";
+    emoji.innerText = "😒";
 
     msghholderdiv.classList.add("orange-highlight");
   } else {
@@ -96,6 +97,9 @@ function clickHandler() {
 
     console.log("masterdobsum:" + masterdobsum);
     console.log("luckyNumber:" + luckyNumber.value);
+    console.log("typeof luckyNumber:" +typeof luckyNumber.value);
+
+
 
     if (masterdobsum % luckyNumber.value === 0) {
       console.log("yaay its a lucky number");
@@ -104,9 +108,7 @@ function clickHandler() {
 
       emoji.innerText = "😃";
 
-
       msghholderdiv.classList.add("yes-highlight");
-
     } else {
       console.log("its not a  luky mumbr");
 
@@ -114,8 +116,6 @@ function clickHandler() {
       emoji.innerText = "😞";
 
       msghholderdiv.classList.add("no-highlight");
-
-
     }
   }
 }
